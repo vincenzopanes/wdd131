@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -98,6 +99,12 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.card h2 {
+    background-color: #36454f;
+    color: white;
+    text-align: center;
+}
+
 /* City Info Section */
 .city-info {
     display: flex;
@@ -114,6 +121,12 @@ main {
     font-style: italic;
     color: #555;
     text-align: start;
+}
+
+h3 {
+    color: #36454f;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
 /* Web Dev Resources Section */
@@ -135,7 +148,7 @@ main {
 }
 
 hr {
-    margin: 2rem 0;
+    margin: 1rem 0;
     border: none;
     border-top: 1px solid #ccc;
 }
