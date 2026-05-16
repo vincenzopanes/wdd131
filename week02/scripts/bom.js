@@ -2,13 +2,27 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list'); // Fill in the blank to reference the unordered list element.
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+button.addEventListener('click', function() {
+  // Code to execute when the button is clicked
 
-li.textContent = input.value;
+    if (input.value.trim() !== '') {
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-deleteButton.textContent = '❌';
+        li.textContent = input.value;
 
-li.append(deleteButton);
+        deleteButton.textContent = '❌';
 
-list.append(li);
+        li.append(deleteButton);
+
+        list.append(li);
+    
+        deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+        input.focus();
+        });
+
+        input.value = '';
+    }
+    input.focus();    
+});
