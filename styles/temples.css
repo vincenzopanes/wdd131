@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Menu Button */
+
+#menu-button {
+    display: block;
+    background-color: #8ad0f8;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 auto 1rem;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8ad0f8;
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Navigation */
+
+nav {display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #8ad0f8;
+    color: #918f15;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1200px;
+    margin: 0  auto;
+    padding: 2rem 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+main h1 {
+    color: #333;
+    grid-column: span 3;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Temple Cards */
+
+.temple-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.temple-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8ad0f8;
+    color: #333;
+    margin-top: 20px;
+}
