@@ -1,5 +1,5 @@
 // Footer
-const year = document.getElementById('year');
+const year = document.getElementById('currentYear');
 const currentYear = new Date().getFullYear();
 year.textContent = currentYear;
 
@@ -15,9 +15,9 @@ menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
 
     if (nav.classList.contains('open')) {
-        menuButton.setAttribute = "✖";
+        menuButton.textContent = "✖";
     }
     else {
-        menuButton.setAttribute = "☰";
+        menuButton.textContent = "☰";
     }
 });

@@ -17,29 +17,34 @@ body {
     background-color: #8ad0f8;
     border: none;
     color: #333;
-    font-size: 24px;
+    font-size: 2rem;
     cursor: pointer;
-    margin: 0 auto 1rem;
+    background: none;
 }
 
 /* Header */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     background-color: #8ad0f8;
 }
 
-header h1 {
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
     color: #333;
     font-size: 24px;
+    margin-bottom: 1rem;
 }
 
 /* Navigation */
 
-nav {display: none;
+nav {
+    display: none;
 }
 
 nav.open {
@@ -59,11 +64,13 @@ nav a{
     color: #333;
     font-weight: 700;
     transition: background-color 0.3s, color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
 }
 
 nav a:hover {
-    background-color: #8ad0f8;
-    color: #918f15;
+    background-color: #5cb9ec;
+    color: white;
 }
 
 /* Main Content */
@@ -72,17 +79,18 @@ main {
     max-width: 1200px;
     margin: 0  auto;
     padding: 2rem 1rem;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
 }
 
 main h1 {
-    color: #333;
-    grid-column: span 3;
     text-align: center;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 /* Temple Cards */
@@ -91,19 +99,38 @@ main h1 {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+
   overflow: hidden;
   transition: transform 0.2s;
+
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
+
+.temple-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
 .temple-card:hover {
   transform: translateY(-5px);
+}
+
+.temple-card figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #8ad0f8;
+    background-color: #5cb9ec;
     color: #333;
     margin-top: 20px;
 }
