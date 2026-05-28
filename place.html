@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Country page for Chile, including data and weather information.">
+    <meta name="author" content="Vincenzo Panes">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">Chile</span>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/atacama-desert-large.webp" type="image/webp">
+                <source srcset="images/atacama-desert-medium.webp" type="image/webp">
+                <img src="images/atacama-desert-small.webp" alt="Chile" width="1500" height="750">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+                <div class="card-content">
+                    <p>Area: 756,102 km²</p>
+                    <p>Population: 19.6 million</p>
+                    <p>Capital: Santiago</p>
+                    <p>Language: Spanish</p>
+                    <p>Currency: Chilean Peso (CLP)</p>
+                    <p>Time Zone: UTC-4 to UTC-6</p>
+                    <p>Calling Code: +56</p>
+                    <p>Internet TLD: .cl</p>
+                </div>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="card-content">
+                    <img src="images/weather-svgrepo-com.svg" alt="Weather" width="300" height="200">
+                    <p>Temperature: 12°C</p>
+                    <p>Conditions: Partly Cloudy</p>
+                    <p>Wind: 15 km/h</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🗡 Vincenzo Panes 🗡 Chile.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
