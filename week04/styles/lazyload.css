@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+
+    margin: 20px auto;
+    border-radius: 8px;
+    
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
