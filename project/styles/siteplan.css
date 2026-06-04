@@ -1,0 +1,28 @@
+:root {
+    --primary: #0F4C81;
+    --secondary: #D4A017;
+    --background: #F4F4F4;
+    --text: #333;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: "Merriweather", serif;
+    color: var(--primary);
+}
+
+h3 {
+    color: var(--secondary);
+}
+
+section {
+    margin-bottom: 40px;
+}
