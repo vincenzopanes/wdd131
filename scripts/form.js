@@ -27,23 +27,20 @@ const products = [
   }
 ];
 
+// Populate Product Select
 const productSelect = document.querySelector("#product-name");
 
-products.forEach(product => {
+if (productSelect) {
+  products.forEach(product => {
     const option = document.createElement("option");
+
     option.value = product.id;
     option.textContent = product.name;
+
     productSelect.appendChild(option);
-});
+  });
+}
 
-// Review Count
-let reviewContent = Number(localStorage.getItem("reviewContent")) || 0;
-
-reviewContent++;
-
-localStorage.setItem("reviewContent", reviewContent);
-
-document.querySelector("#review-count").textContent = reviewContent;
 
 // Footer
 document.querySelector("#current-year").textContent = 

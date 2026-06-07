@@ -117,6 +117,10 @@ input[type="submit"]:hover {
   opacity: 0.9;
 }
 
+.required {
+    color: red;
+}
+
 /*  FOOTER  */
 footer {
     background-color: var(--secondary);
