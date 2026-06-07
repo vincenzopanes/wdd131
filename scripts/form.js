@@ -1,3 +1,4 @@
+// Product Data
 const products = [
   {
     id: "fc-1888",
@@ -34,6 +35,15 @@ products.forEach(product => {
     option.textContent = product.name;
     productSelect.appendChild(option);
 });
+
+// Review Count
+let reviewContent = Number(localStorage.getItem("reviewContent")) || 0;
+
+reviewContent++;
+
+localStorage.setItem("reviewContent", reviewContent);
+
+document.querySelector("#review-count").textContent = reviewContent;
 
 // Footer
 document.querySelector("#current-year").textContent = 
