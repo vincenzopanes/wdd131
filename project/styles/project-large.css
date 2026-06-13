@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    .contact-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    #product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .welcome,
+    .hero,
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .welcome h2,
+    .hero h2,
+    .about h2 {
+        margin-top: 0;
+    }
+
+    .contact-intro,
+    .contact-form-section {
+        height: 100%;
+    }
+
+}
