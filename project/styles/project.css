@@ -1,3 +1,4 @@
+/* Styles */
 :root {
     --principal-color: #005f73;
     --secondary-color: #0a9396;
@@ -85,7 +86,8 @@ nav a:hover {
 .active {
     background-color: var(--principal-color);
     border-radius: 5px;
-    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Main */
@@ -169,7 +171,7 @@ img {
 }
 .btn:hover{
     background-color: #ca6702;
-    color:cadetblue
+    color: var(--third-color)
 }
 
 /* Producs Cards */
@@ -212,11 +214,6 @@ img {
 
 .favorite-btn:hover {
     background-color: var(--principal-color);
-}
-
-.active {
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 /* Hero */

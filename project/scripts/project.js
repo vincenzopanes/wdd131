@@ -57,7 +57,7 @@ function displayProducts() {
         productElement.classList.add('product');
 
         productElement.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" loading="lazy">
+            <img src="${product.image}" alt="${product.name}" width="300" height="220" loading="lazy">
             <p class="category">${product.category}</p>
             <h3>${product.name}</h3>
             <p>${product.description}</p>
